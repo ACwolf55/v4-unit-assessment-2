@@ -36,6 +36,12 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach({this.calories=(this.carbs*4)+(this.protein*4)+(this.fat*9)})
+
+let calories = (this.carbs*4)+(this.protein*4)+(this.fat*9)
+
+
+
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -82,6 +88,9 @@ const products = [
 
 //CODE HERE
 
+const saleProducts =products.map(this.price *= .75)
+
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -91,6 +100,9 @@ const products = [
 */
 
 //CODE HERE
+
+
+const blueProducts = saleProducts.filter(element, index, wholeArray) => {return element } 
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -216,6 +228,7 @@ const userInfo = {
 */
 
 //CODE HERE
+const shouldAlert = userInfo.settings;
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -251,6 +264,19 @@ const userInfo = {
 */
 
 //CODE HERE
+const person ={ 
+  name:'baller',
+  age:900,
+  jobs:['nba','zoologist','jedi'],
+  birthday:function(){this.age +=1 },
+  favorites: {
+      color:'yellow',
+      number:1,
+      book:'hungry caterpiller'},
+  kids: [ {name:'Zelda',age:20},{name:'Falco',age:20},{name:'Sunoco',age:20} ]
+}
+
+
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -276,7 +302,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +315,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout
