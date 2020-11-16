@@ -36,9 +36,14 @@ let foods = [
 */
 
 //CODE HERE
-foods.forEach({this.calories=(this.carbs*4)+(this.protein*4)+(this.fat*9)})
+foods.forEach(function(element, index, array) {
+  this.calories = (this.carbs*4)+(this.protein*4)+(this.fat*9)
+  
+})
 
-let calories = (this.carbs*4)+(this.protein*4)+(this.fat*9)
+
+
+
 
 
 
@@ -88,7 +93,11 @@ const products = [
 
 //CODE HERE
 
-const saleProducts =products.map(this.price *= .75)
+let saleProducts = products.map((element, index, arr) => { 
+  arr[index].price *= .75
+  return arr[index]
+})
+
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -102,7 +111,7 @@ const saleProducts =products.map(this.price *= .75)
 //CODE HERE
 
 
-const blueProducts = saleProducts.filter(element, index, wholeArray) => {return element } 
+
 
 ////////////////////PROBLEM 4////////////////////
 /*
